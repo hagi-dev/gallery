@@ -13,7 +13,7 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_DB=gallery
     volumes:
-      - ./data2:/tmp
+      - ./data:/tmp/data
 
     ports:
       - "5432:5432"
