@@ -19,6 +19,9 @@ services:
       
 
   api:
+    build:
+      context: ./api
+      dockerfile: ./dockerfile
     restart: always
     image: hagidev/backappgallery:1.0
     environment:
