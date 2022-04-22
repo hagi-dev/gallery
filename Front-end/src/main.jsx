@@ -4,7 +4,6 @@ import App from "./App";
 import { Provider } from "react-redux";
 import { store } from "../src/redux/store";
 import { BrowserRouter } from "react-router-dom";
-import { Auth0Provider } from "@auth0/auth0-react";
 
 ReactDOM.render(
 	<Provider store={store}>
