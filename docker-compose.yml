@@ -20,7 +20,7 @@ services:
 
   api:
     restart: always
-    image: hagidev/backappgallery:latest
+    image: hagidev/backappgallery:1.0
     environment:
       DB_USER: postgres
       DB_PASSWORD: Alianza0606
@@ -40,7 +40,7 @@ services:
     build:
       context: ./Front-end
       dockerfile: ./dockerfile
-    image: hagidev/frontappgallery:latest
+    image: hagidev/frontappgallery:1.0
     ports:
       - "80:80"
       - "443:443"
