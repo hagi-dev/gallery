@@ -7,7 +7,7 @@ services:
   ##############################
 
   db:
-    image: postgres
+    image: postgres:9.6
     environment:
       - POSTGRES_PASSWORD=Alianza0606
       - POSTGRES_USER=postgres
