@@ -25,7 +25,6 @@ services:
       DB_USER: postgres
       DB_PASSWORD: Alianza0606
       DB_HOST: db
-
       keyTokens: pepe
       restart: always
     depends_on:
