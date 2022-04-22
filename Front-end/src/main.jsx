@@ -9,12 +9,7 @@ ReactDOM.render(
 	<Provider store={store}>
 		<React.StrictMode>
 			<BrowserRouter>
-				<Auth0Provider
-					domain='dev-flotws23.us.auth0.com'
-					clientId='pRJYzAopJub2qstKEvPHdoDBOBuX1yx5'
-					redirectUri={window.location.origin}>
 					<App />
-				</Auth0Provider>
 			</BrowserRouter>
 		</React.StrictMode>
 	</Provider>,
