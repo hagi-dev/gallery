@@ -8,7 +8,7 @@ export function fetchPaints() {
     return function(dispatch) {
         dispatch({ type: "FETCH_PAINTS" });
         axios
-            .get("http://100.25.214.217:3001/products")
+            .get("http://http://54.242.28.114:3001/products")
             .then(function(response) {
                 dispatch({
                     type: "FETCH_PAINTS_SUCCESS",
@@ -25,7 +25,7 @@ export function getDetail(id) {
     return function(dispatch) {
         dispatch({ type: "FETCH_PAINT_DETAIL" });
         axios
-            .get("http://100.25.214.217:3001/product/" + id)
+            .get("http://http://54.242.28.114:3001/product/" + id)
             .then(function(response) {
                 dispatch({
                     type: "FETCH_PAINT_DETAIL",
@@ -42,7 +42,7 @@ export function getCategories() {
     return function(dispatch) {
         dispatch({ type: "FETCH_CATEGORIES" });
         axios
-            .get("http://100.25.214.217:3001/categories")
+            .get("http://http://54.242.28.114:3001/categories")
             .then(function(response) {
                 dispatch({
                     type: "FETCH_CATEGORIES_SUCCESS",
